@@ -138,52 +138,6 @@ The application uses three main smart contracts:
    npm run deploy:sepolia
    ```
 
-## Demo Flow
-
-1. **Login**:
-
-   - Use the demo account or connect with MetaMask
-   - Explore different user roles (Manufacturer, Supplier, etc.)
-
-2. **Product Tracking**:
-
-   - Navigate to the Product Tracking page
-   - Scan or enter an RFID tag (e.g., 0xABCD1234EFGH5678)
-   - View real-time product information and history
-
-3. **Supply Chain Map**:
-
-   - Explore the interactive map
-   - View product locations and movements
-   - Click on markers for detailed information
-
-4. **Inventory Management**:
-
-   - Add new products
-   - Update product status
-   - View product details and history
-
-5. **Transactions**:
-   - Create new transactions
-   - View transaction history
-   - Check wallet balance
-
-## Project Structure
-
-```
-src/
-  ├── components/         # Reusable UI components
-  │   ├── dashboard/     # Dashboard-specific components
-  │   ├── layout/        # Layout components
-  │   ├── tracking/      # RFID tracking components
-  │   └── ui/           # Common UI components
-  ├── contexts/          # React context providers
-  ├── contracts/         # Smart contract ABIs and artifacts
-  ├── pages/            # Application pages/routes
-  ├── utils/            # Helper functions
-  └── main.tsx          # Application entry point
-```
-
 ## Security Features
 
 - Blockchain-based verification
@@ -204,7 +158,3 @@ src/
 ## License
 
 MIT License - See LICENSE file for details
-
-## Support
-
-For support, please open an issue in the GitHub repository or contact the development team.
