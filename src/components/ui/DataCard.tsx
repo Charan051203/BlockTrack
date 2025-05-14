@@ -22,11 +22,10 @@ const DataCard: React.FC<DataCardProps> = ({
   return (
     <div className={`card ${className}`}>
       <div className="flex items-start justify-between">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col items-start">
           <p className="text-neutral-500 text-sm">{title}</p>
-          <div className="mt-2 text-left">
-            <span className="text-2xl font-bold block">{value}</span>
-          </div>
+          <span className="text-2xl font-bold mt-2">{value}</span>
+        </div>
           
           {trend && (
             <div className="flex items-center mt-2">
