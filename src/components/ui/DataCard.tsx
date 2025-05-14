@@ -20,20 +20,14 @@ const DataCard: React.FC<DataCardProps> = ({
   className = '' 
 }) => {
   return (
-    <div className={`card ${className} text-left`}>
-      <div className="flex items-start gap-4">
-        {/* Icon on the left */}
-        <div className="p-2 rounded-md bg-primary-50 text-primary-500 flex-shrink-0">
-          {icon}
-        </div>
-
-        {/* Text content */}
+    <div className={`card ${className}`}>
+      <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-neutral-500 text-sm">{title}</p>
-          <div className="mt-2">
+          <div className="mt-2 text-left">
             <span className="text-2xl font-bold block">{value}</span>
           </div>
-
+          
           {trend && (
             <div className="flex items-center mt-2">
               <div 
@@ -42,7 +36,7 @@ const DataCard: React.FC<DataCardProps> = ({
                 }`}
               >
                 <svg
-                  className={`w-3 h-3 mr-1 ${!trend.isPositive ? 'transform rotate-180' : ''}`}
+                  className={`w-3 h-3 mr-1 ${!trend.isPositive && 'transform rotate-180'}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -60,6 +54,10 @@ const DataCard: React.FC<DataCardProps> = ({
               <span className="text-xs text-neutral-500 ml-1.5">{trend.label}</span>
             </div>
           )}
+        </div>
+        
+        <div className="p-2 rounded-md bg-primary-50 text-primary-500 flex-shrink-0">
+          {icon}
         </div>
       </div>
     </div>
