@@ -24,7 +24,7 @@ const DataCard: React.FC<DataCardProps> = ({
       <div className="flex items-start">
         <div className="flex-1">
           <p className="text-neutral-500 text-sm">{title}</p>
-          <div className="mt-2 text-left">
+          <div style="text:left" className="mt-2 text-left">
             <span className="text-2xl font-bold block">{value}</span>
           </div>
           
