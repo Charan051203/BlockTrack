@@ -20,23 +20,23 @@ const DataCard: React.FC<DataCardProps> = ({
   className = '' 
 }) => {
   return (
-    <div className={card ${className}}>
+    <div className={`card ${className}`}>
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-neutral-500 text-sm">{title}</p>
-          <div className="mt-2 text-left">
+          <div className="mt-2">
             <span className="text-2xl font-bold block">{value}</span>
           </div>
           
           {trend && (
             <div className="flex items-center mt-2">
               <div 
-                className={flex items-center text-xs font-medium ${
+                className={`flex items-center text-xs font-medium ${
                   trend.isPositive ? 'text-success-600' : 'text-error-600'
-                }}
+                }`}
               >
                 <svg
-                  className={w-3 h-3 mr-1 ${!trend.isPositive && 'transform rotate-180'}}
+                  className={`w-3 h-3 mr-1 ${!trend.isPositive && 'transform rotate-180'}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -64,4 +64,4 @@ const DataCard: React.FC<DataCardProps> = ({
   );
 };
 
-export default DataCard; 
+export default DataCard;
