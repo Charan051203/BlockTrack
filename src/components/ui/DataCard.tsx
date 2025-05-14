@@ -20,11 +20,11 @@ const DataCard: React.FC<DataCardProps> = ({
   className = '' 
 }) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card ${className} text-left`}>
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-neutral-500 text-sm">{title}</p>
-          <div className="mt-2 text-left">
+          <div className="mt-2">
             <span className="text-2xl font-bold block">{value}</span>
           </div>
           
